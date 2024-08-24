@@ -1,0 +1,23 @@
+/* Style for card container */
+.cards-container {
+  display: flex; /* Use flexbox to layout the cards */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the container */
+}
+
+/* Style for individual cards */
+.ant-card {
+  flex: 1 1 300px; /* Flex-grow and flex-shrink with a base width of 300px */
+  margin: 10px; /* Space around each card */
+}
+
+/* Style for card header background color */
+.ant-card-head {
+  background-color: #e1eedb !important; /* Light green background for card headers */
+}
+
+/* Ensure title is visible */
+.ant-card-head-title {
+  color: #000 !important; /* Text color for card titles */
+}

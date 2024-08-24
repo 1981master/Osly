@@ -1,0 +1,102 @@
+/* Style for the header menu at the top of the page */
+.header-menu {
+  background-color: #93e49a; /* Light green background for the header menu */
+  border-bottom: 1px solid #ddd; /* Border at the bottom */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  position: relative; /* Ensure proper positioning */
+  z-index: 10; /* Ensure it's on top */
+}
+
+/* Style for the tabs container */
+.tabs-container {
+  display: flex; /* Use flexbox to layout the header and body */
+  flex-direction: column; /* Arrange header on top and body below */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Style for the body section below the header */
+.tabs-body {
+  display: flex; /* Use flexbox to layout the side menu and main content */
+  height: calc(100vh - 64px); /* Full height minus header height */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+/* Style for the side menu */
+.tabs-side-menu {
+  width: 10%; /* Fixed width for the side menu */
+  background-color: #f0f4f0; /* Light background color for side menu */
+  padding: 0px; /* Padding inside the side menu */
+  box-sizing: border-box; /* Include padding in element's total width and height */
+  margin: 0; /* Remove margin */
+}
+
+/* Style for the main content area */
+.tabs-main-content {
+  width: 90%; /* Remaining width for the main content area */
+  padding: 0px; /* Padding around the main content */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  margin: 0; /* Remove margin */
+}
+
+/* Style for the school name on the right side of the side menu */
+.school-name {
+  position: absolute;
+  right: 0; /* Position it to the right */
+  top: 0; /* Align it with the top */
+  background-color: #93e49a; /* Same background as the side menu for consistency */
+  padding: 20px; /* Padding around the school name */
+  box-sizing: border-box; /* Include padding in element's total width and height */
+  font-size: 1.5em; /* Font size for the school name */
+  font-weight: bold; /* Make the font bold */
+  z-index: 10; /* Ensure it's on top */
+}
+
+/* Style for the Ant Design Tabs */
+.ant-tabs {
+  border: none; /* Remove default border */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Style for the tab bar */
+.ant-tabs-nav {
+  background-color: #cceecf; /* Light green background for the tab bar */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  border-bottom: 1px solid #ddd; /* Border at the bottom */
+}
+
+/* Style for the individual tab titles */
+.ant-tabs-tab {
+  background-color: #c8e6c9; /* Light green background for tab titles */
+  color: #000; /* Text color for tab titles */
+  border-radius: 4px; /* Rounded corners for tabs */
+  padding: 10px 20px; /* Padding inside each tab */
+  margin: 0; /* Remove margin between tabs */
+}
+
+/* Change background color on hover */
+.ant-tabs-tab:hover {
+  background-color: #aff0b8; /* Slightly different light green for hover */
+}
+
+/* Style for the active tab */
+.ant-tabs-tab-active {
+  background-color: #3e5f3f; /* Light green background for the active tab */
+  color: #000; /* Text color for the active tab */
+}
+/* Change background color on hover for menu items */
+.ant-menu-item:hover,
+.ant-menu-item-active {
+  background-color: #b2dfdb !important; /* Slightly different light green for hover */
+  color: #000 !important; /* Ensure text color stays black */
+}
+
+/* Style for the active menu item */
+.ant-menu-item-selected,
+.ant-menu-item-active {
+  background-color: #a5d6a7 !important; /* Light green background for the active menu item */
+  color: #000 !important; /* Text color for the active menu item */
+}

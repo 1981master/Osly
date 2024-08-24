@@ -1,0 +1,38 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the menu spans the full width of the page */
+.custom-menu {
+  width: 100%; /* Full width */
+  background-color: rgb(53, 231, 53); /* Background color for the menu */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  position: relative; /* Ensure proper alignment */
+}
+
+/* Menu item styles */
+.custom-menu .ant-menu-item {
+  color: #000; /* Default text color */
+}
+
+/* Change background color on hover */
+.custom-menu .ant-menu-item:hover {
+  background-color: #d4edda !important; /* Slightly different color on hover */
+  color: #000 !important; /* Text color on hover */
+}
+
+/* Change background color for selected item */
+.custom-menu .ant-menu-item-active {
+  background-color: #c3e6cb !important; /* Slightly different color for selected item */
+  color: #000 !important; /* Text color for the selected item */
+}
+
+/* Ensure full-width layout for the app container */
+.app-container {
+  margin: 0; /* Remove any margin around the app container */
+  padding: 0; /* Remove any padding around the app container */
+}
